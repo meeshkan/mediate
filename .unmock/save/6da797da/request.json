@@ -1,0 +1,10 @@
+{
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "user-agent": "axios/0.18.0",
+    "connection": "close"
+  },
+  "host": "api.nytimes.com",
+  "method": "GET",
+  "path": "/svc/movies/v2/reviews/search.json?query=godfather&api-key=KcivkecbgfUqo4J7DgHNdMtw5XgZO0Ey"
+}

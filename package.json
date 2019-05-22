@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.17.0",
     "unmock": "0.0.54",
     "unmock-node": "0.0.54"
