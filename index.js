@@ -6,8 +6,8 @@ app.get("/", (req, res) => {
     axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=avenger&api-key=KcivkecbgfUqo4J7DgHNdMtw5XgZO0Ey')
     .then(function (response) {
         // handle success
-        console.log(typeof response.data.results)
-        res.send(JSON.stringify(response.data.results))
+        console.log(response.data)
+        res.json(response.data)
     })
     .catch(function (error) {
         // handle error
