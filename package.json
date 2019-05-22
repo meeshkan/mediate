@@ -1,0 +1,20 @@
+{
+  "name": "heroku-example",
+  "version": "1.0.0",
+  "description": "Small example of a Heroku pipeline",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.0",
+    "unmock": "0.0.54",
+    "unmock-node": "0.0.54"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
