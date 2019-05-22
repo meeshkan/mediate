@@ -2,6 +2,20 @@
 
 This project was created with [create-react-app](https://facebook.github.io/create-react-app/).
 
+## Development
+
+Start the development server:
+
+```
+npm start
+```
+
+Run tests in watch mode:
+
+```
+npm test
+```
+
 ## Deployment in Heroku
 
 First check that you have the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed and you're logged in.
