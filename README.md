@@ -6,7 +6,7 @@ Here are three two APIs you'll be using.
 
 | API                                                                       | Description   |
 | ------------------------------------------------------------------------- | ------------- |
-| [Rotten Tomatos](https://developer.fandango.com/docs)                     | Movie Reviews |
+| [NY Times Movie Review](https://developer.nytimes.com/apis)                | Movie Reviews |
 | [Spotify](https://developer.spotify.com/documentation/web-api/reference/) | Music         |
 | [Unsplash](https://unsplash.com/documentation)                            | Photos        |
 
