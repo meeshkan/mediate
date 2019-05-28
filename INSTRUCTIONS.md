@@ -1,8 +1,6 @@
 # Python boilerplate for Mediate
 
-Sorry, nothing here yet. Refer to this [tutorial](https://devcenter.heroku.com/articles/getting-started-with-python) for how to deploy a Python app in Heroku.
-
-This is a Python boilerplate for deploying a Flask app in Heroku.
+This is a Python boilerplate for deploying a Flask backend in Heroku.
 
 ## Heroku instructions
 
