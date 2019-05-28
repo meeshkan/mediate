@@ -47,7 +47,7 @@ to serve the app locally.
 1. Add the repository as a project in CircleCI
 1. Read the instructions for Heroku deployment [here](https://circleci.com/docs/2.0/deployment-integrations/#heroku).
 1. Read and understand [./circleci/config.yml](./.circleci/config.yml) how CircleCI is configured to deploy `master` to Heroku.
-1. After adding the project in CircleCI, uou need to setup `HEROKU_APP_NAME` and `HEROKU_API_KEY` as environment variables in CircleCI. See [here](https://help.heroku.com/PBGP6IDE/how-should-i-generate-an-api-key-that-allows-me-to-use-the-heroku-platform-api) how to find your Heroku API key. **WARNING: Never add the Heroku API key or any other sensitive data to GitHub!**
+1. After adding the project in CircleCI, you need to setup `HEROKU_APP_NAME` and `HEROKU_API_KEY` as environment variables in CircleCI. See [here](https://help.heroku.com/PBGP6IDE/how-should-i-generate-an-api-key-that-allows-me-to-use-the-heroku-platform-api) how to find your Heroku API key. **WARNING: Never add the Heroku API key or any other sensitive data to GitHub!**
 
 ### Automatic deployments from GitHub
 
