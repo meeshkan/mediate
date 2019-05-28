@@ -30,4 +30,6 @@ git push heroku master
 
 ## Setting up CircleCI
 
-The configuration for building and deploying the app is in [.circleci/config.yml](./.circleci/config.yml). The configuration references environment variables `HEROKU_APP_NAME` and `HEROKU_API_KEY`, which you must add in _CircleCI dashboard_ . **Never push the API key to GitHub!**
+The configuration for building and deploying the app is in [.circleci/config.yml](./.circleci/config.yml). The configuration references environment variables `HEROKU_APP_NAME` and `HEROKU_API_KEY`, which you must add in _CircleCI dashboard_.
+
+**WARNING: Never push Heroku API key or any other sensitive token to GitHub!**
