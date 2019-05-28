@@ -1,5 +1,8 @@
 {
   "name": "heroku-example",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "version": "1.0.0",
   "description": "Small example of a Heroku pipeline",
   "main": "index.js",
