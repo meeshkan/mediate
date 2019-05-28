@@ -1,0 +1,14 @@
+{
+  "name": "Python backend for mediate",
+  "description": "A barebones Python app with Flask and Heroku",
+  "image": "heroku/python",
+  "repository": "https://github.com/unmock/mediate",
+  "keywords": ["python"],
+  "env": {
+    "SECRET_KEY": {
+      "description": "Any secret key.",
+      "generator": "secret"
+    }
+  },
+  "environments": {}
+}
