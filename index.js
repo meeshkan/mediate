@@ -12,9 +12,9 @@ const client_secret = process.env.SPOTIFY_CLIENT_SECRET;
 
 let token = "";
 
-const onLoad = () =>
+const onLoad = async () => {
   //This function runs on server load, fetching the token through "client credentials" authorization flow from spotify
-  axios({
+  let response = await axios({
     method: "post",
     url: "https://accounts.spotify.com/api/token",
     params: {
@@ -26,13 +26,15 @@ const onLoad = () =>
         Buffer.from(client_id + ":" + client_secret).toString("base64")
     },
     json: true
-  })
-    .then(response => {
-      token = response.data.access_token;
-    })
-    .catch(err => console.log(err));
+  });
 
-onLoad();
+  let token = response.data.access_token;
+  return token;
+};
+
+(async () => {
+  token = await onLoad();
+})();
 
 app.get("/", (req, res) => res.send({ message: "The server is ready" }));
 
