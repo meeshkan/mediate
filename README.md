@@ -14,4 +14,6 @@ We will be building a web app that accepts a search query and lists movies, phot
 
 This app will communicate via a custom API to our backend, which will aggregate requests to the above services.
 
+Instructions on configuring Geroku for testing and automatic deployment will go here. 
+
 Happy hacking!
