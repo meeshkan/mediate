@@ -1,6 +1,7 @@
 require('dotenv/config'); // Read .env
 import { unmock } from 'unmock-node';
 import buildApp from './app';
+const bodyParser = require('body-parser')
 
 // Important: port must be read from the environment for Heroku
 const port = process.env.PORT || 3000;
