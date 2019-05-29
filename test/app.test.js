@@ -10,7 +10,7 @@ describe('Express app', () => {
   });
   it('returns movie reviews', async () => {
     const response = await request(app)
-      .get('/movies')
+      .get('/movies/reviews')
       .expect(200);
     expect(response.body.movies).toBeDefined();
   });

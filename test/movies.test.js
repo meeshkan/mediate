@@ -5,7 +5,7 @@ import request from 'supertest';
 
 const app = express();
 const route = MovieReviewRoute();
-app.use('/movies/reviews', route);
+app.use('/movies', route);
 
 describe('Movies route', () => {
   beforeAll(async () => {
