@@ -1,5 +1,8 @@
 {
   "name": "heroku-example",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "version": "1.0.0",
   "description": "Small example of a Heroku pipeline",
   "main": "index.js",
@@ -10,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "express": "^4.17.0",
     "unmock": "0.0.54",
     "unmock-node": "0.0.54"

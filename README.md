@@ -1,19 +1,31 @@
 # Mediate
 
-Mediate is the world's most awesome media aggregator! You have been tasked to build it for a cohort of demanding clients that want to find the best movies and music to promote their brands.  To build and test the app, we'll use [`unmock`](https://githutb.com/unmock/unmock-js).
+Mediate is the world's most awesome media aggregator! You have been tasked to build it for a cohort of demanding clients that want to find the best movies and music to promote their brands. To build and test the app, we'll use [`unmock`](https://githutb.com/unmock/unmock-js).
 
-Here are three two APIs you'll be using.
+This is the Nodejs backend for this Mediate application.
 
-| API                                                                       | Description   |
-| ------------------------------------------------------------------------- | ------------- |
-| [NY Times Movie Review](https://developer.nytimes.com/apis)                | Movie Reviews |
-| [Spotify](https://developer.spotify.com/documentation/web-api/reference/) | Music         |
-| [Unsplash](https://unsplash.com/documentation)                            | Photos        |
+# How to run the server
 
-We will be building a web app that accepts a search query and lists movies, photos and songs that correspond to the query. Each item can be clicked on, and the click will take the user through to a unique page with more information about that item.
+### Locally
 
-This app will communicate via a custom API to our backend, which will aggregate requests to the above services.
+- `git clone` this repository.
+- Use the terminal to access this repository on your computer, then run `npm install` to install the needed modules.
+- Go and create a spotify application at [Spotify for Developers ](https://developer.spotify.com/).
+- Create a `.env` file in the root of the repository.
+- Grab the client ID and client secret from your newly-created spotify application and write them in the `.env` file in this format:
 
-Instructions on configuring Geroku for testing and automatic deployment will go here. 
+```javascript
+SPOTIFY_CLIENT_ID=*your_client_id_here*
+SPOTIFY_CLIENT_SECRET=*your_client_secret_here*
+```
 
-Happy hacking!
+- `npm start` to run the server after installing the modules.
+- `npm test` to run the tests.
+
+### on Heroku
+
+- remember to config the config vars with the format similar to above.
+
+# Endpoints
+
+`GET /search?song={songName}`: Search for songs with song name.
